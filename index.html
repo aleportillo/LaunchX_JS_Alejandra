@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Pokédex
+        </h1>
+        <span>
+            <input type="text" placeholder="Ingresa un numero" id="idPokemon" name="idPokemon">
+            <button onclick="searchPokemon();">Buscar</button>
+        </span>
+    </header>
+    <section class="pokemon-information">
+        <div>
+            <img id="pokemonImage" src="./assets/pokeball.jpg" alt="pokeball" width="100%">
+        </div>
+        <div>
+            <span>
+                <div class="pokeNameId">
+                    <h2 id="pokeName"></h2>
+                    <h2 id="pokeId"></h2>
+                </div>
+                <div class="pokeType" id="pokeTypesContainer">
+                </div>
+            </span>
+            <span id="aboutPoke">
+                <span class="pokeWeightCard">
+                    <div class="header">
+                        <h2>Weight</h2>
+                    </div>
+                    <div class="info">
+                        <p id="pokeWeight"></p>
+                    </div>
+                </span>
+                <span class="pokeHeightCard">
+                    <div class="header">
+                        <h2>Height</h2>
+                    </div>
+                    <div class="info">
+                        <p id="pokeHeight"></p>
+                    </div>
+                </span>
+                <span class="pokeMovesCard">
+                    <div class="header">
+                        <h2>Total Moves</h2>
+                    </div>
+                    <div class="info">
+                        <p id="pokeMoves"></p>
+                    </div>
+                </span>
+            </span>
+            <span id="baseStats">
+                <span class="pokeStats">
+                    <div class="header">
+                        <h2>Base Stats</h2>
+                    </div>
+                    <div class="info">
+                        <span>
+                            <span class="text">
+                                <p class="title">HP</p>
+                                <p id="hpValue"></p>
+                            </span>
+                            <div class="progressContainer">
+                                <span id="hpProgress"></span>
+                            </div>
+                        </span>
+                        <span>
+                            <span class="text">
+                                <p class="title">ATK</p>
+                                <p id="attackValue"></p>
+                            </span>
+                            <div class="progressContainer">
+                                <span id="attackProgress"></span>
+                            </div>
+                        </span>
+                        <span>
+                            <span class="text">
+                                <p class="title">DEF</p>
+                                <p id="defenseValue"></p>
+                            </span>
+                            <div class="progressContainer">
+                                <span id="defenseProgress"></span>
+                            </div>
+                        </span>
+                        <span>
+                            <span class="text">
+                                <p class="title">STAK</p>
+                                <p id="special-attackValue"></p>
+                            </span>
+                            <div class="progressContainer">
+                                <span id="special-attackProgress"></span>
+                            </div>
+                        </span>
+                        <span>
+                            <span class="text">
+                                <p class="title">SDEF</p>
+                                <p id="special-defenseValue"></p>
+                            </span>
+                            <div class="progressContainer">
+                                <span id="special-defenseProgress"></span>
+                            </div>
+                        </span>
+                        <span>
+                            <span class="text">
+                                <p class="title">SPD</p>
+                                <p id="speedValue"></p>
+                            </span>
+                            <div class="progressContainer">
+                                <span id="speedProgress"></span>
+                            </div>
+                        </span>
+                    </div>
+                </span>
+            </span>
+        </div>
+    </section>
+    <section class="pokemon-description">
+    </section>
+</body>
+<script src="javascript.js"></script>
+</html>
